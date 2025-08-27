@@ -9,7 +9,7 @@ def ap_dung_dirichlet_tong_quat(n_chim, m_chuong):
     if m_chuong <= 0:
         return "Số chuồng phải lớn hơn 0."
 
-    # Sử dụng math.ceil để làm tròn lên
+    # Sử dụng math.ceil để làm tròn lên 
     so_chim_toi_thieu = math.ceil(n_chim / m_chuong)
 
     print(f"Có {n_chim} 'chim bồ câu' và {m_chuong} 'chuồng'.")
@@ -25,7 +25,6 @@ def ap_dung_dirichlet_nguoc(m_chuong, k):
     if m_chuong <= 0 or k <= 0:
         return "Số chuồng và k phải lớn hơn 0."
     
-    # Công thức: (k - 1) * m_chuong + 1
     so_chim_can_rut = (k - 1) * m_chuong + 1
     print(f"Với {m_chuong} 'chuồng' và cần ít nhất {k} 'chim' trong 1 chuồng:")
     print(f"=> Phải rút ra ít nhất {so_chim_can_rut} 'chim'.")
